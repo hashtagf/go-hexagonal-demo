@@ -5,6 +5,8 @@ import (
 	"gohexdemo/internal/core/ports"
 )
 
+// business logic (Service)
+
 type OrderService struct {
 	orderRepository ports.OrderRepository
 }

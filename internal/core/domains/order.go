@@ -5,12 +5,14 @@ import (
 	"errors"
 )
 
+// Domain model
 type Order struct {
 	ID    string  `json:"id"`
 	Name  string  `json:"name"`
 	Price float64 `json:"price"`
 }
 
+// Business rules
 func (o *Order) Validate() error {
 	if o.ID == "" {
 		return errors.New("id is required")
