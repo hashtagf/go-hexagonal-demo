@@ -79,11 +79,6 @@ graph TB
     REPO --> DB
     CLIENT --> ExtService
 
-    %% Styling
-    classDef external fill:#ddd,stroke:#333,stroke-width:1px
-    classDef adapter fill:#afd,stroke:#333,stroke-width:1px
-    classDef core fill:#f9f,stroke:#333,stroke-width:1px
-    classDef port fill:#fda,stroke:#333,stroke-width:1px
 
     class CLI,REST,DB,ExtService external
     class HTTP,GRPC,REPO,CLIENT adapter
