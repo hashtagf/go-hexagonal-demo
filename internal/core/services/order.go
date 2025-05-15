@@ -19,5 +19,6 @@ func (s *OrderService) CreateOrder(order *domains.Order) error {
 	if err := order.Validate(); err != nil {
 		return err
 	}
+
 	return s.orderRepository.SaveOrder(order)
 }
